@@ -196,7 +196,7 @@ export default function AnalisesPage() {
           <SelectTrigger className="w-[180px]">
             <div className="flex items-center gap-2">
               <Filter className="h-4 w-4" />
-              {userFilter === "all" ? "Filtrar por Usuário" : userFilter}
+              {userFilter ? userFilter : "Filtrar por Usuário"}
             </div>
           </SelectTrigger>
           <SelectContent>

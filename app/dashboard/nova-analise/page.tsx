@@ -256,9 +256,20 @@ export default function NovaAnalisePage() {
                             accept=".xls,.xlsx,.ods,.xml"
                             className="hidden"
                           />
-                          <p className="text-xs text-muted-foreground">
-                            Formatos suportados: .xls, .xlsx, .ods, .xml (máx. 10MB)
-                          </p>
+                          <div className="space-y-1">
+                            <p className="text-xs text-muted-foreground">
+                              Formatos suportados: .xls, .xlsx, .ods, .xml (máx. 10MB)
+                            </p>
+                            <div className="flex gap-2 justify-center text-xs">
+                              <a href="/modelos/modelo-produtos.xlsx" className="text-blue-600 hover:underline">
+                                Baixar modelo XLSX
+                              </a>
+                              <span className="text-muted-foreground">|</span>
+                              <a href="/modelos/modelo-produtos.xml" className="text-blue-600 hover:underline">
+                                Baixar modelo XML
+                              </a>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     ) : (
